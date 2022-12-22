@@ -1,27 +1,26 @@
-.box {
-  position: relative;
-  display: block;
-  margin: 20px;
-}
+/* .home-box {
+  display: inline-block;
+  text-align: center;
+} */
 .home-link {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 30px;
+  display: block;
+  margin: 30px;
+}
+
+.home-txt {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .home-img {
-  display: block;
-  width: 200px;
-  height: 300px;
+  width: 50%;
+  height: 50%;
 }
-.btn {
-  border: none;
-  padding: 0;
-}
-.home-txt {
+.h-line {
+  position: relative;
   display: block;
-  width: 30px;
-  height: 30px;
-  white-space: nowrap;
+  margin-top: 30px;
+  height: 1px;
+  background-color: rgb(47, 47, 47);
 }

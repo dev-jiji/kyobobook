@@ -7,5 +7,6 @@ const requests = {
   fetchComputerIt: "http://192.168.0.183:9988/api/book/category/5",
   fetchDetail: "http://192.168.0.183:9988/api/book/list?size=100",
 };
+
 // `주소/image/`${item.imageUri}
 export default requests;

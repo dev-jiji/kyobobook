@@ -2,8 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-
+import { faPerson } from "@fortawesome/free-solid-svg-icons";
 const Header = () => {
   const [nav, setNav] = useState(false); // 메뉴의 초기값을 false로 설정
 
@@ -13,11 +12,13 @@ const Header = () => {
   return (
     <div className="header">
       <div className="menu">
-        <FontAwesomeIcon
-          icon={faBars}
-          className="menu-icon"
-          onClick={() => toggleMenu()}
-        ></FontAwesomeIcon>
+      <Link to={"/members"}>
+          <FontAwesomeIcon
+            icon={faPerson}
+            className="menu-icon"
+            onClick={() => toggleMenu()}
+          ></FontAwesomeIcon>
+      </Link>
         <nav className={nav ? "show-menu" : "hide-menu"}>
           <ul className="gnb">
             <li className="depth">
